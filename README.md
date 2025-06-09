@@ -19,28 +19,26 @@ cd rusya_burslari_bot
 ```
 
 ### 3. Node.js Bağımlılıklarını Kur
-
-Proje dizininde aşağıdaki komut çalıştırılarak gerekli paketler yüklenir.
-
+Proje Dizini/rusya_burslari_bot içerisinde aşağıdaki komut çalıştırılarak gerekli paketler yüklenir.
 ```bash
 npm install
 ```
 
-Aynı komut proje klasörü içindeki "Chatgpt Api" dizini içinde de çalıştırılmalıdır. Bu sayede REST API sorunsuz çalışacaktır.
+Aynı komut proje klasörü içindeki "ChatGPT API" dizini içinde de çalıştırılmalıdır. Bu sayede REST API sorunsuz çalışacaktır.
 
 ### 4. MySQL Veritabanını Kur
 
 - XAMPP veya benzeri bir yazılımla MySQL sunucusunu başlat.
 - `phpMyAdmin` arayüzü veya bash kullanarak yeni bir veritabanı oluştur.
 - Ardından, `ProjeKlasörü/SQL` dizininde bulunan örnek SQL dosyasını içeri aktar.
-- ⁠Veritabanı kullanıcı adı 'root' ve şifresiz olarak kullanılabilir test amacıyla.
+- Veritabanı kullanıcı adı 'root'  ve şifresiz olarak kullanılabilir test amacıyla.
 
 ### 5. ChatGPT REST API'sini Başlat
 
 Botun GPT desteğini kullanabilmesi için yerel bir API servisi çalıştırmalısın:
 
 ```bash
-cd ChatgptApi
+cd "ChatGPT API"
 node main.js
 ```
 
@@ -52,32 +50,29 @@ Projenin güvenli ve esnek bir şekilde çalışabilmesi için API anahtarları,
 
 ### 1. `.env` Dosyası Oluştur
 
-Proje ana dizininde bir `.env` dosyası oluştur ve aşağıdaki örneğe benzer şekilde doldur:
+"ChatGPT API" dizininde bir `.env` dosyası oluştur ve aşağıdaki örneğe benzer şekilde doldur:
 
 ```
 # ChatGPT API Ayarları
 OPENAI_API_KEY=sk-abc123def456ghi789
 ```
 
-### 2. Ortam Değişkenlerini Koda Dahil Et
-
-Kod içinde bu değişkenleri kullanmak için `dotenv` paketini kurduğundan emin ol.
-
-```bash
-npm install
-```
-
-komutu ile zaten kurulmuş olmalı.
-
 ## 📦 Yapı
 
 ```
-telegram-rusya-burs-botu/
+Project Path/
 ├── ChatgptApi/
 │   └── main.js
+    └── .
+    └── .
+    └── .
 ├── SQL/
-│   └── ornek-veritabani.sql
-├── bot.js
-├── package.json
+│   └── rusya_burslari_bot.sql
+├── rusya_burslari_bot/
+    └── bot.js
+    └── package.json
+    └── .
+    └── .
+    └── .
 └── README.md
 ```
